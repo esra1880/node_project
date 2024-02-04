@@ -18,10 +18,11 @@
     "start": "node app.js",
     "test": "npm test",
     "deploy": "echo 'No deploy process specified' && exit 0"
-}
-
   },
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "14.17.5"
   }
 }
