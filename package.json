@@ -1,6 +1,10 @@
 {
   "name": "nodejs-image-demo",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esra1880/node_project.git"
+  },
   "description": "nodejs image demo",
   "author": "Esra the Shark <esra@example.com>",
   "license": "MIT",
