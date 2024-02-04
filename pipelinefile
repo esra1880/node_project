@@ -1,23 +1,24 @@
 pipeline {
   agent any
-    
-  tools {nodejs "node"}
-    
+
+  tools {
+    nodejs "node" // Bu, Jenkins'ta tanımlı olan Node.js aracının adını yansıtmalıdır
+  }
+
   stages {
-        
     stage('Git') {
       steps {
-        git 'https://github.com/esra1880/node_project'
+        git 'https://github.com/****/****'
       }
     }
-     
+
     stage('Build') {
       steps {
         sh 'npm install'
-        sh 'npm run build' // Özelleştirilecek build komutunu ekleyin
+        sh 'npm run build'
       }
     }  
-    
+
     stage('Test') {
       steps {
         sh 'npm test'
