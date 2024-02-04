@@ -15,7 +15,11 @@
     "express"
   ],
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "echo 'No tests specified' && exit 0",
+    "deploy": "echo 'No deploy process specified' && exit 0"
+}
+
   },
   "dependencies": {
     "express": "^4.16.4"
