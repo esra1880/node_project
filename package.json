@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "start": "node app.js",
-    "test": "echo 'No tests specified' && exit 0",
+    "test": "npm test",
     "deploy": "echo 'No deploy process specified' && exit 0"
 }
 
