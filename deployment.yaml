@@ -16,4 +16,4 @@ spec:
       - name: node-project-container
         image: esra44/nodejs-image-demo:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 4000
