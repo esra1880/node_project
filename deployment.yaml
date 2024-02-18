@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-project-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-project
+  template:
+    metadata:
+      labels:
+        app: node-project
+    spec:
+      containers:
+      - name: node-project-container
+        image: esra44/nodejs-image-demo:latest
+        ports:
+        - containerPort: 8080
